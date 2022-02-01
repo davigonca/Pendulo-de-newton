@@ -58,12 +58,12 @@ function draw() {
 
 //ESCOLHA A OPÇÃO CORRETA PARA APLICAR UMA TECLA PRESSIONADA E ALTERAR A POSIÇÃO DO OBJETO BOLA PARA A ESQUERDA QUANDO A TECLA DE SETA PARA CIMA FOR PRESSIONADA
 
- function keyPressed() {
- 	if (keyCode === DOWN_ARROW) {
- 		Matter.Body.applyForce(bob1.body,bob1.body.position,{x:-50,y:-45});
- 	}
- }
-
+ //function keyPressed() {
+ 	//if (keyCode === DOWN_ARROW) {
+ 	//	Matter.Body.applyForce(bob1.body,bob1.body.position,{x:-50,y:-45});
+ 	//}
+ //}
+//
 //function keyPressed() {
 // 	if (keyCode === UP_ARROW) {
 // 		Matter.Body.applyForce(bob1,bob1.position,{x:-50,y:-45});
@@ -76,8 +76,8 @@ function draw() {
 //	}
 // }
 
-// function keyPressed() {
-// 	if (keyCode === UP_ARROW) {
-// 		Matter.Body.applyForce(bob1.body,bob1.body.position,{x:-50,y:-45});
-// 	}
-// }
+ function keyPressed() {
+ 	if (keyCode === UP_ARROW) {
+ 		Matter.Body.applyForce(bob1.body,bob1.body.position,{x:-50,y:-45});
+ 	}
+ }
